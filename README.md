@@ -245,7 +245,7 @@ Nesta rota é necessário o envio do id do contato pela url de requisição.
 ]
 ```
 
-<h2 align ='center'> Listar contatos do usuário logado </h2>
+<h2 align ='center'> Deletar contatos do usuário logado </h2>
 
 Nesta rota é necessário o envio do id do contato pela url de requisição.
 
