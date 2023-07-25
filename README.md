@@ -57,7 +57,7 @@ A API tem um total de 9 endpoints, sendo em volta principalmente do usuário - p
   "fullName": "Roger Magalhães",
 	"email": "roger@mail.com",
 	"password": "123456",
-	"telephone": "031999999999""
+	"telephone": "031999999999"
 }
 ```
 
