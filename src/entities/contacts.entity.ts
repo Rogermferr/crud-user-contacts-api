@@ -2,6 +2,7 @@ import {
   Column,
   CreateDateColumn,
   Entity,
+  JoinColumn,
   ManyToOne,
   PrimaryGeneratedColumn,
 } from "typeorm";
@@ -21,7 +22,8 @@ class Contact {
   @CreateDateColumn({ type: "date" })
   createdAt: string | Date;
 
-  @ManyToOne(() => User)
+  @ManyToOne(() => User, { onDelete: "CASCADE" })
+  @JoinColumn()
   user: User;
 }
 
