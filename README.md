@@ -29,18 +29,24 @@ A API de Gerenciamento de Usuários e Contatos é uma poderosa ferramenta desenv
 * E seus types localizados no arquivo package.json.
 
 ## :rocket: Rodando o projeto
+
+Primeiramente é necessário a criação de um arquivo .env na raiz, copie o conteúdo do .env.example para o .env criado, em seguida crie um banco de dados no postgres e configure o DATABASE_URL com as informações do banco de dados criado.
+
 Para rodar o repositório é necessário clonar o mesmo, dar o seguinte comando ao iniciar o projeto para instalar todas as dependências necessárias:
 ```
 npm install
-
 ```
 
 Em seguida para rodar o projeto o seguinte comando:
 
 ```
 npm run dev
-
 ```
+
+Após os passos acima, caso queira testar as funcionalidades da api acessem: https://kenzie-kontacts.vercel.app/ ou no insomnia:
+
+<a href="https://insomnia.rest/run/?label=crud_user_contacts&uri=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F11LCQG5JAoB62d1PZ8EQkQgEgVDckO9KQ%2Fview%3Fusp%3Dsharing" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
+
 
 ## :soon: Endpoints:
 
