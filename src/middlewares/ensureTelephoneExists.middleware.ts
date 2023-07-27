@@ -29,11 +29,9 @@ const ensureTelephoneExistsMiddleware = async (
     return next();
   }
 
-  if (contact && contact.telephone === telephone) {
+  if (contact && contact.id === req.params.id) {
     return next();
   }
-
-  console.log(userTel);
 
   if (user && telephone) throw new AppError("Telephone already exists", 409);
 
