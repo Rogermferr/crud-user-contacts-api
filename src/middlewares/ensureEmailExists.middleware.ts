@@ -10,10 +10,15 @@ const ensureEmailExistsMiddleware = async (
   next: NextFunction
 ): Promise<Response | void> => {
   const email: string = req.body.email;
+  const userEmail: string = res.locals.userEmail;
 
   const userRepository: Repository<User> = AppDataSource.getRepository(User);
 
   const user: User | null = await userRepository.findOneBy({ email: email });
+
+  if (user && userEmail === email) {
+    return next();
+  }
 
   if (user && email) throw new AppError("Email already exists", 409);
 

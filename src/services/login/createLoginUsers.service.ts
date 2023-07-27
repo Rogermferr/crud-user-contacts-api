@@ -30,11 +30,12 @@ const createLoginUsersService = async (data: TLogin): Promise<any> => {
   const token: string = sign(
     {
       email: user.email,
+      telephone: user.telephone,
     },
     String(process.env.SECRET_KEY),
     {
       expiresIn: "24h",
-      subject: String(user.id),
+      subject: user.id,
     }
   );
 

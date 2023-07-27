@@ -21,6 +21,8 @@ const ensureTokenIsValidMiddleware = async (
     }
 
     res.locals.userId = decoded.sub;
+    res.locals.userEmail = decoded.email;
+    res.locals.userTel = decoded.telephone;
   });
 
   return next();
