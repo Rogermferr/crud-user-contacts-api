@@ -32,6 +32,7 @@ contactsRoutes.patch(
   "/:id",
   ensureBodyIsValidMiddleware(contactUpdateRequestSchema),
   ensureTokenIsValidMiddleware,
+  ensureEmailExistsMiddleware,
   ensureIsOwnerMiddleware,
   ensureTelephoneExistsMiddleware,
   updateContactsController

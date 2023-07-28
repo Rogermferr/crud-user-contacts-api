@@ -23,9 +23,11 @@ const ensureEmailExistsMiddleware = async (
     email: email,
   });
 
+  console.log("AQUI", contact);
+
   if (contact && email) throw new AppError("Email already exists", 409);
 
-  if (user && userEmail === email) {
+  if (user && userEmail === email && !contact) {
     return next();
   }
 
