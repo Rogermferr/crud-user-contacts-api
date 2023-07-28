@@ -11,7 +11,8 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://kenzie-kontacts.vercel.app",
+    // origin: "https://kenzie-kontacts.vercel.app",
+    origin: "http://localhost:5173",
   })
 );
 

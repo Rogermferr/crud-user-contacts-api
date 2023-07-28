@@ -16,6 +16,9 @@ class Contact {
   @Column({ type: "varchar", length: 150 })
   fullName: string;
 
+  @Column({ type: "varchar", length: 150, unique: true })
+  email: string;
+
   @Column({ type: "varchar", length: 15, unique: true })
   telephone: string;
 

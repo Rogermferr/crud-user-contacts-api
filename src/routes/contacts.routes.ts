@@ -13,6 +13,7 @@ import {
 import ensureTokenIsValidMiddleware from "../middlewares/ensureTokenIsValid.middleware";
 import ensureTelephoneExistsMiddleware from "../middlewares/ensureTelephoneExists.middleware";
 import { ensureIsOwnerMiddleware } from "../middlewares/ensureIsOwner.middleware";
+import ensureEmailExistsMiddleware from "../middlewares/ensureEmailExists.middleware";
 
 const contactsRoutes: Router = Router();
 
@@ -20,6 +21,7 @@ contactsRoutes.post(
   "",
   ensureBodyIsValidMiddleware(contactRequestSchema),
   ensureTokenIsValidMiddleware,
+  ensureEmailExistsMiddleware,
   ensureTelephoneExistsMiddleware,
   createContactsController
 );
