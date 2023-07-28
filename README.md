@@ -32,12 +32,18 @@ A API de Gerenciamento de Usuários e Contatos é uma poderosa ferramenta desenv
 
 Primeiramente é necessário a criação de um arquivo .env na raiz, copie o conteúdo do .env.example para o .env criado, em seguida crie um banco de dados no postgres e configure o DATABASE_URL com as informações do banco de dados criado.
 
-Para rodar o repositório é necessário clonar o mesmo, dar o seguinte comando ao iniciar o projeto para instalar todas as dependências necessárias:
+Para rodar o repositório é necessário clonar o mesmo, dar o seguinte comando no terminal ao iniciar o projeto para instalar todas as dependências necessárias:
+
 ```
 npm install
 ```
 
-Em seguida para rodar o projeto o seguinte comando:
+Ainda no terminal, após o comando acima rode as migrações existentes na pasta migrations para criar as tabelas no seu banco de dados com o seguinte comando:
+```
+npm run typeorm migration:run -- -d src/data-source
+```
+
+Por fim, Em seguida para rodar o projeto:
 
 ```
 npm run dev
