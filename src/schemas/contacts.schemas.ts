@@ -1,5 +1,4 @@
 import { z } from "zod";
-import { userSchema } from "./users.schemas";
 
 const contactSchema = z.object({
   id: z.string(),
