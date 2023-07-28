@@ -5,10 +5,8 @@ import {
   Column,
   CreateDateColumn,
   Entity,
-  OneToMany,
   PrimaryGeneratedColumn,
 } from "typeorm";
-import Contact from "./contacts.entity";
 
 @Entity("users")
 class User {
@@ -29,9 +27,6 @@ class User {
 
   @CreateDateColumn({ type: "date" })
   createdAt: string | Date;
-
-  @OneToMany(() => Contact, (contacts) => contacts.user)
-  contacts: Contact[];
 
   @BeforeInsert()
   @BeforeUpdate()
