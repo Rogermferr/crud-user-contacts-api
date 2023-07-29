@@ -66,7 +66,7 @@ A API tem um total de 9 endpoints, sendo em volta principalmente do usuário - p
 
 ```json
 {
-  "fullName": "Roger Magalhães",
+  	"fullName": "Roger Magalhães",
 	"email": "roger@mail.com",
 	"password": "123456",
 	"telephone": "031999999999"
@@ -151,8 +151,8 @@ Após o usuário estar logado, ele deve conseguir cadastrar seus contatos.
 ```json
 {
 	"fullName": "Roger Magalhães",
-  "email": "rogermferr@mail.com",
-  "password": "12345678",
+  	"email": "rogermferr@mail.com",
+  	"password": "12345678",
 	"telephone": "031999999910"
 }
 ```
@@ -191,6 +191,7 @@ Não possui corpo de resposta.
 ```json
 {
 	"fullName": "Roger Magalhães",
+	"email": "roger@mail.com",
 	"telephone": "031999999999"
 }
 ```
@@ -203,6 +204,7 @@ Caso dê tudo certo, a resposta será assim:
 {
 	"id": "882f1abe-0f4e-4da8-ad79-9a6cf2bf87c2",
 	"fullName": "Roger Magalhães",
+	"email": "roger@mail.com",
 	"telephone": "031999999999",
 	"createdAt": "2023-07-24"
 }
@@ -221,6 +223,7 @@ Caso dê tudo certo, a resposta será assim:
 	{
 		"id": "b16bc121-1d84-42c2-b830-a0e9ccf2f430",
 		"fullName": "Roger Magalhães",
+		"email": "roger@mail.com",
 		"telephone": "031999999910",
 		"createdAt": "2023-07-24"
 	}
@@ -237,6 +240,7 @@ Nesta rota é necessário o envio do id do contato pela url de requisição.
 [
 	{
 		"fullName": "Roger Magalhães Ferreira",
+		"email": "roger@mail.com",
 		"telephone": "031999999910",
 	}
 ]
@@ -251,6 +255,7 @@ Nesta rota é necessário o envio do id do contato pela url de requisição.
 	{
 		"id": "b16bc121-1d84-42c2-b830-a0e9ccf2f430",
 		"fullName": "Roger Magalhães Ferreira",
+		"email": "roger@mail.com",
 		"telephone": "031999999910",
 		"createdAt": "2023-07-24"
 	}
