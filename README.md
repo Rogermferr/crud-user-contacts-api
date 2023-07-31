@@ -30,6 +30,9 @@ A API de Gerenciamento de Usuários e Contatos é uma poderosa ferramenta desenv
 
 ## :rocket: Rodando o projeto
 
+Atualização da api: Foi realizado o deploy da api, para testá-la apenas acesse o ambiente: https://kenzie-kontacts.vercel.app/
+Url base da api: https://kenzie-contacts.onrender.com
+
 Primeiramente é necessário a criação de um arquivo .env na raiz, copie o conteúdo do .env.example para o .env criado, em seguida crie um banco de dados no postgres e configure o DATABASE_URL com as informações do banco de dados criado.
 
 Para rodar o repositório é necessário clonar o mesmo, dar o seguinte comando no terminal ao iniciar o projeto para instalar todas as dependências necessárias:
