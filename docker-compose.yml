@@ -11,7 +11,7 @@ services:
     env_file:
       - .env
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -h db -U rogerlinux"]
+      test: ["CMD-SHELL", "pg_isready -h db -U ${DATABASE_USER}"]
       interval: 10s
       timeout: 5s
       retries: 5
